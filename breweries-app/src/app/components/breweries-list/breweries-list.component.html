@@ -1,0 +1,42 @@
+<div class="container p-5">
+
+  <div class="row d-flex justify-content-center">
+
+    <div class="col-7">
+
+      <h1 class="text-dark text-center">Available breweries</h1>
+
+      <table class="table table-dark table-striped">
+
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>City</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let brewery of breweries$ | async; index as i">
+            <td>{{i + (page - 1) * pageSize + 1}}</td>
+            <td><a class="nav-link" [routerLink]="['/brewery', brewery.id]">{{brewery.name}}</a></td>
+            <td>{{brewery.city}}</td>
+          </tr>
+        </tbody>
+
+      </table>
+
+      <div class="d-flex justify-content-between">
+        <button class="btn btn-dark" (click)="previousPage()">Back</button><button class="btn btn-dark" (click)="nextPage()">Next</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- *ngFor="let user of users"
+        (click)="navigateToUser(user.id)" -->
