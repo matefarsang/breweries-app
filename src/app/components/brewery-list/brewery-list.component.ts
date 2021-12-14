@@ -2,16 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { Brewery } from 'src/app/models/brewery.model';
-import { BreweryService } from 'src/app/services/brewery.service';
 import { getItems } from 'src/app/store/brewery/breweryActions';
 import { selectItems } from 'src/app/store/brewery/breweryReducers';
 
 @Component({
-  selector: 'app-breweries-list',
-  templateUrl: './breweries-list.component.html',
-  styleUrls: ['./breweries-list.component.css']
+  selector: 'app-brewery-list',
+  templateUrl: './brewery-list.component.html',
+  styleUrls: ['./brewery-list.component.css']
 })
-export class BreweriesListComponent implements OnInit {
+export class BreweryList implements OnInit {
 
   breweries$: Observable<Brewery[]>;
 

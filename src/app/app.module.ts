@@ -10,18 +10,20 @@ import { EffectsModule } from '@ngrx/effects'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BreweriesListComponent } from './components/breweries-list/breweries-list.component';
+import { BreweryList } from './components/brewery-list/brewery-list.component';
 import { BreweryDetailsComponent } from './components/brewery-details/brewery-details.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MainComponent } from './components/main/main.component';
 import { FormsModule } from '@angular/forms';
+import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 @NgModule({
   declarations: [
     AppComponent,
-    BreweriesListComponent,
+    BreweryList,
     BreweryDetailsComponent,
     NavbarComponent,
-    MainComponent
+    MainComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
