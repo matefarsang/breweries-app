@@ -1,7 +1,8 @@
 # BreweryApp
 
-Sörfőzde applikáció, NgRX store használatával.
-Terminálból az alkalmazást a gyökéren állva:  " ng s "  parancsal lehet elindítani.
+● Sörfőzde applikáció, NgRX store használatával.
+
+● Terminálból az alkalmazást a gyökéren állva:  " ng s "  paranccsal lehet elindítani.
 
 
 //
